@@ -12,9 +12,9 @@ export function LessonItem({ item }: LessonItemProps) {
     // Função auxiliar para escolher o ícone baseado no status e tipo
     const getIcon = () => {
 
-        if (item.leftType === 'normal') return `-`;
-        if (item.leftType === 'dropdown') return <CheckCircle2 className="w-5 h-5 text-green-500" />;
-        if (item.type === 'project') return <Terminal className="w-5 h-5 text-yellow-500" />;
+        if (item.leftType === 'normal') return <span className="normal-icon">~</span>;
+        if (item.leftType === 'dropdown') return <span className="dropdown-icon">&gt;</span>;
+        if (item.type === 'project') return <Terminal className="w-6 h-6 text-yellow-500" />;
         return <Circle className="w-5 h-5 text-gray-600" />;
     };
 
@@ -25,7 +25,7 @@ export function LessonItem({ item }: LessonItemProps) {
       hover:bg-gray-800/50 cursor-pointer
     `}>
             {/* Ícone de status (esquerda) */}
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-[#09090b] group-hover:bg-[#1f2937] rounded-full transition-colors z-10 border border-gray-800 group-hover:border-gray-700">
                 {getIcon()}
             </div>
 
@@ -39,7 +39,7 @@ export function LessonItem({ item }: LessonItemProps) {
                 </h3>
             </div>
 
-            {/* Badge de duração/tipo (direita) */}
+            {/* tipo (direita) */}
             {item.rightType && (
                 <div className="flex-shrink-0">
                     <span className={`

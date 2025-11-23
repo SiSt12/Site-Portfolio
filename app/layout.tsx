@@ -25,7 +25,7 @@ export default function RootLayout({
       */}
       <body className={`${inter.className} bg-[#09090b] text-gray-100 antialiased min-h-screen`}>
         {/* Container principal centralizado */}
-        <div className="max-w-4xl mx-auto px-4 py-8">
+        <div className="max-w-6xl mx-auto px-4 py-8">
           {/* Header simples */}
           <header className="flex items-center justify-between mb-16">
             <div className="flex items-center gap-2">
@@ -35,7 +35,7 @@ export default function RootLayout({
               </span>
             </div>
             {/* Botão de exemplo (Fórum na imagem original) */}
-            <button className="px-4 py-1.5 rounded bg-green-600 hover:bg-green-700 text-sm font-medium transition-colors">
+            <button className="px-4 py-1.5 rounded bg-[#2B59C3] hover:bg-[#2B59C3]/90 text-sm font-medium transition-colors">
               Contato
             </button>
           </header>

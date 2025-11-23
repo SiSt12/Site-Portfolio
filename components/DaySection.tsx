@@ -16,16 +16,15 @@ export function DaySection({ section }: DaySectionProps) {
             </h2>
 
             {/* Lista de Itens */}
-            <div className="space-y-1">
+            <div className="space-y-1 relative">
                 {/* Linha vertical conectando os itens (efeito visual da imagem) */}
-                <div className="relative">
-                    {/* Linha de fundo pontilhada ou sólida */}
-                    <div className="absolute left-[1.15rem] top-4 bottom-4 w-px bg-gray-800 -z-10" />
+                {section.items.length > 1 && (
+                    <div className="absolute left-8 top-4 bottom-4 w-px bg-gray-800 -z-10" />
+                )}
 
-                    {section.items.map((item) => (
-                        <LessonItem key={item.id} item={item} />
-                    ))}
-                </div>
+                {section.items.map((item) => (
+                    <LessonItem key={item.id} item={item} />
+                ))}
             </div>
         </div>
     );

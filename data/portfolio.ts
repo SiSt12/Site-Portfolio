@@ -55,6 +55,14 @@ export const portfolioData: PortfolioSection[] = [
         rightType: 'Project',
         leftType: 'project',
       },
+      {
+        id: 'proj-3',
+        title: 'Jobson',
+        type: 'project',
+        leftType: 'project',
+        rightType: 'Project',
+        url: 'https://github.com/seu-usuario/projeto',
+      },
     ],
   },
   {
@@ -66,7 +74,7 @@ export const portfolioData: PortfolioSection[] = [
         title: 'Desenvolvedor Frontend Sênior',
         type: 'experience',
         rightType: '2023-Presente',
-        leftType: 'normal',
+        leftType: 'dropdown',
       },
       {
         id: 'exp-2',
