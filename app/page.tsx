@@ -6,7 +6,7 @@ export default function Home() {
     <div className="space-y-8">
       {/* Título Principal */}
       <div className="mb-12 text-center">
-        <h1 className="text-4xl font-bold mb-4">Meus Projetos / Skills</h1>
+        <h1 className="text-4xl font-bold mb-4">Bem vindo!</h1>
         <p className="text-gray-400 max-w-lg mx-auto">
           Uma jornada através do meu aprendizado e desenvolvimento.
           Aqui você encontra meus projetos, artigos e experiências.

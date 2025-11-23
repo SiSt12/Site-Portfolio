@@ -8,8 +8,8 @@ export interface PortfolioItem {
   id: string;
   title: string;
   type: ItemType;
-  duration?: string; // ex: "10xp", "3min" (como na imagem)
-  status?: 'completed' | 'in-progress' | 'locked';
+  rightType?: string; // ex: "10xp", "3min" (como na imagem)
+  leftType?: 'normal' | 'dropdown' | 'project';
   url?: string;
 }
 
@@ -31,15 +31,8 @@ export const portfolioData: PortfolioSection[] = [
         id: 'welcome',
         title: 'Bem-vindo ao meu portfólio!',
         type: 'article',
-        status: 'completed',
-        duration: 'Ler',
-      },
-      {
-        id: 'stack',
-        title: 'Minha Stack Tecnológica',
-        type: 'skill',
-        status: 'in-progress',
-        duration: 'Ver',
+        leftType: 'normal',
+        rightType: 'Ler',
       },
     ],
   },
@@ -51,16 +44,16 @@ export const portfolioData: PortfolioSection[] = [
         id: 'proj-1',
         title: 'E-commerce Fullstack com Next.js',
         type: 'project',
-        duration: 'Code',
-        status: 'completed',
+        leftType: 'project',
+        rightType: 'Project',
         url: 'https://github.com/seu-usuario/projeto',
       },
       {
         id: 'proj-2',
-        title: 'App de Gestão Financeira',
+        title: 'App de piano web',
         type: 'project',
-        duration: 'Demo',
-        status: 'in-progress',
+        rightType: 'Project',
+        leftType: 'project',
       },
     ],
   },
@@ -72,15 +65,15 @@ export const portfolioData: PortfolioSection[] = [
         id: 'exp-1',
         title: 'Desenvolvedor Frontend Sênior',
         type: 'experience',
-        duration: '2023-Presente',
-        status: 'completed',
+        rightType: '2023-Presente',
+        leftType: 'normal',
       },
       {
         id: 'exp-2',
         title: 'Desenvolvedor Fullstack Pleno',
         type: 'experience',
-        duration: '2021-2023',
-        status: 'completed',
+        rightType: '2021-2023',
+        leftType: 'normal',
       },
     ],
   },
