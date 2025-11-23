@@ -12,8 +12,8 @@ export function LessonItem({ item }: LessonItemProps) {
     // Função auxiliar para escolher o ícone baseado no status e tipo
     const getIcon = () => {
 
-        if (item.status === 'normal') return `-`;
-        if (item.status === 'dropdown') return <CheckCircle2 className="w-5 h-5 text-green-500" />;
+        if (item.leftType === 'normal') return `-`;
+        if (item.leftType === 'dropdown') return <CheckCircle2 className="w-5 h-5 text-green-500" />;
         if (item.type === 'project') return <Terminal className="w-5 h-5 text-yellow-500" />;
         return <Circle className="w-5 h-5 text-gray-600" />;
     };
