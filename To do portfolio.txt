@@ -1,0 +1,14 @@
+TODO LIST PORTFOLIO
+
+1- footer
+2- atualizar todos os textos
+3- animacao do icone de projetos
+4- botar a stack utilizada na direita dos projetos?
+5- pensar sobre a cor do bg
+6- pensar sobre se bota foto
+7- botao de teste para projetos embaixo do repo github
+8- certificacoes
+9- modo claro
+10- fazer uma sessao tech stack
+11- sessao educacao
+12- traducao do site para ingles
