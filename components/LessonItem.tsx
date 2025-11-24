@@ -22,7 +22,11 @@ export function LessonItem({ item }: LessonItemProps) {
             </div>
         );
         if (item.leftType === 'dropdown') return <Play className={`w-4 h-4 fill-current text-[#a600e8] ml-0.5 transition-transform duration-200 ${isOpen ? 'rotate-90' : ''}`} />;
-        if (item.type === 'project') return <Terminal className="w-6 h-6 text-yellow-500" />;
+        if (item.type === 'project') return (
+            <div className={`flex items-center justify-center w-full h-full transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}>
+                <span className="normal-icon !text-yellow-500">~</span>
+            </div>
+        );
         return <Circle className="w-5 h-5 text-gray-600" />;
     };
 

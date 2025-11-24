@@ -28,7 +28,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
                 <div className="space-y-3">
                     <a
-                        href="mailto:silvaldo@example.com"
+                        href="mailto:sistl+contact@pm.me"
                         className="flex items-center gap-3 p-3 rounded-lg bg-gray-800/50 hover:bg-gray-800 transition-colors border border-gray-700/50 group"
                     >
                         <div className="p-2 rounded-full bg-blue-500/10 text-blue-400 group-hover:bg-blue-500/20 transition-colors">
@@ -36,12 +36,12 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                         </div>
                         <div>
                             <div className="text-sm font-medium text-gray-200">Email</div>
-                            <div className="text-xs text-gray-400">silvaldo@example.com</div>
+                            <div className="text-xs text-gray-400">sistl+contact@pm.me</div>
                         </div>
                     </a>
 
                     <a
-                        href="https://github.com"
+                        href="https://github.com/SiSt12"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-3 p-3 rounded-lg bg-gray-800/50 hover:bg-gray-800 transition-colors border border-gray-700/50 group"
@@ -51,12 +51,12 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                         </div>
                         <div>
                             <div className="text-sm font-medium text-gray-200">GitHub</div>
-                            <div className="text-xs text-gray-400">github.com/silvaldo</div>
+                            <div className="text-xs text-gray-400">https://github.com/SiSt12</div>
                         </div>
                     </a>
 
                     <a
-                        href="https://linkedin.com"
+                        href="https://www.linkedin.com/in/silvaldo-stolarz-83964a223"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-3 p-3 rounded-lg bg-gray-800/50 hover:bg-gray-800 transition-colors border border-gray-700/50 group"
@@ -66,7 +66,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                         </div>
                         <div>
                             <div className="text-sm font-medium text-gray-200">LinkedIn</div>
-                            <div className="text-xs text-gray-400">linkedin.com/in/silvaldo</div>
+                            <div className="text-xs text-gray-400">linkedin.com/in/silvaldo-stolarz-83964a223</div>
                         </div>
                     </a>
                 </div>
