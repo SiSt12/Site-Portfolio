@@ -12,3 +12,4 @@ TODO LIST PORTFOLIO
 10- fazer uma sessao tech stack
 11- sessao educacao
 12- traducao do site para ingles
+13- https://formspree.io/ para os emails
