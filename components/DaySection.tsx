@@ -17,10 +17,7 @@ export function DaySection({ section }: DaySectionProps) {
 
             {/* Lista de Itens */}
             <div className="space-y-1 relative">
-                {/* Linha vertical conectando os itens (efeito visual da imagem) */}
-                {section.items.length > 1 && (
-                    <div className="absolute left-8 top-4 bottom-4 w-px bg-gray-800 -z-10" />
-                )}
+                {/* Linha vertical removida conforme solicitação */}
 
                 {section.items.map((item) => (
                     <LessonItem key={item.id} item={item} />

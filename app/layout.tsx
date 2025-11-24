@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/Header";
 
 // Configuração da fonte Inter (similar à do site de referência)
 const inter = Inter({ subsets: ["latin"] });
@@ -17,28 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      {/* 
-        Aplicando classes globais:
-        - bg-[#09090b]: Fundo muito escuro (quase preto)
-        - text-gray-100: Texto claro para contraste
-        - antialiased: Suavização de fonte
-      */}
-      <body className={`${inter.className} bg-[#09090b] text-gray-100 antialiased min-h-screen`}>
+      {/* ... comments ... */}
+      <body className={`${inter.className} bg-[#0d1117] text-gray-100 antialiased min-h-screen`}>
         {/* Container principal centralizado */}
         <div className="max-w-6xl mx-auto px-4 py-8">
-          {/* Header simples */}
-          <header className="flex items-center justify-between mb-16">
-            <div className="flex items-center gap-2">
-              <span className="font-bold text-xl tracking-tight">Silvaldo Stolarz</span>
-              <span className="px-2 py-0.5 rounded bg-green-900/30 text-green-400 text-xs font-medium border border-green-900/50">
-                SS
-              </span>
-            </div>
-            {/* Botão de exemplo (Fórum na imagem original) */}
-            <button className="px-4 py-1.5 rounded bg-[#2B59C3] hover:bg-[#2B59C3]/90 text-sm font-medium transition-colors">
-              Contato
-            </button>
-          </header>
+          {/* Header com modal de contato */}
+          <Header />
 
           <main>
             {children}

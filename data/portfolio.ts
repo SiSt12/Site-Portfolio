@@ -11,6 +11,8 @@ export interface PortfolioItem {
   rightType?: string; // ex: "10xp", "3min" (como na imagem)
   leftType?: 'normal' | 'dropdown' | 'project';
   url?: string;
+  content?: string;
+  defaultOpen?: boolean;
 }
 
 export interface PortfolioSection {
@@ -33,20 +35,23 @@ export const portfolioData: PortfolioSection[] = [
         type: 'article',
         leftType: 'normal',
         rightType: 'Ler',
+        defaultOpen: true,
+        content: '<p>Olá! Sou um desenvolvedor apaixonado por criar experiências web incríveis.</p><p class="mt-2">Tenho experiência com React, Next.js, Node.js e muito mais.</p>',
       },
     ],
   },
   {
     id: 'projects',
-    title: 'Projetos Recentes',
+    title: 'Projetos',
     items: [
       {
         id: 'proj-1',
-        title: 'E-commerce Fullstack com Next.js',
+        title: 'Gerador Aleatorio de Animais',
         type: 'project',
         leftType: 'project',
         rightType: 'Project',
         url: 'https://github.com/seu-usuario/projeto',
+        content: '<p>Aplicação interativa geradora de fotos de animais on demand.</p><p class="mt-2">Desenvolvida para praticar consumo de APIs externas.</p><p class="mt-2"><a href="https://github.com/seu-usuario/projeto" target="_blank" class="text-blue-400 hover:underline">Ver código no GitHub -></a></p>',
       },
       {
         id: 'proj-2',
@@ -54,6 +59,7 @@ export const portfolioData: PortfolioSection[] = [
         type: 'project',
         rightType: 'Project',
         leftType: 'project',
+        content: '<p>Aplicação interativa de piano que permite tocar músicas diretamente no navegador.</p>',
       },
       {
         id: 'proj-3',
@@ -71,17 +77,24 @@ export const portfolioData: PortfolioSection[] = [
     items: [
       {
         id: 'exp-1',
-        title: 'Desenvolvedor Frontend Sênior',
+        title: 'Estágio Vibra Energia',
         type: 'experience',
-        rightType: '2023-Presente',
+        rightType: '2024-Presente',
         leftType: 'dropdown',
-      },
-      {
-        id: 'exp-2',
-        title: 'Desenvolvedor Fullstack Pleno',
-        type: 'experience',
-        rightType: '2021-2023',
-        leftType: 'normal',
+        content: `
+          <p>Estágio na Vibra Energia na área de aplicações corporativas e automação de processos.</p>
+          <p class="mt-2">Ganhei experiência com Java, PowerBI, Outsystems, Python e integração de APIs.</p>
+          <div class="mt-3 text-sm text-gray-400 space-y-1">
+            <div class="flex gap-2">
+              <span class="font-medium text-gray-300">Início:</span>
+              <span>Agosto de 2024</span>
+            </div>
+            <div class="flex gap-2">
+              <span class="font-medium text-gray-300">Fim:</span>
+              <span>Presente</span>
+            </div>
+          </div>
+        `,
       },
     ],
   },
