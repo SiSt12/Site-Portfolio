@@ -46,12 +46,12 @@ export const portfolioData: PortfolioSection[] = [
     items: [
       {
         id: 'proj-1',
-        title: 'Gerador Aleatorio de Animais',
+        title: 'Habit Tracker',
         type: 'project',
-        leftType: 'project',
         rightType: 'Project',
-        url: 'https://github.com/seu-usuario/projeto',
-        content: '<p>Aplicação interativa geradora de fotos de animais on demand.</p><p class="mt-2">Desenvolvida para praticar consumo de APIs externas.</p><p class="mt-2"><a href="https://github.com/seu-usuario/projeto" target="_blank" class="text-blue-400 hover:underline">Ver código no GitHub -></a></p>',
+        leftType: 'project',
+        url: 'https://github.com/SiSt12/Habit-Tracker-Clone',
+        content: '<p>Aplicativo de checklist de habitos feito para ajudar no dia a dia</p><p class="mt-2"><a href="https://github.com/SiSt12/Habit-Tracker-Clone" target="_blank" class="text-blue-400 hover:underline">Ver código no GitHub -></a></p><p class="mt-2"><a href="https://silvaldo.com/habit" target="_blank" class="text-blue-400 hover:underline">Visitar projeto -></a></p>',
       },
       {
         id: 'proj-2',
@@ -63,11 +63,12 @@ export const portfolioData: PortfolioSection[] = [
       },
       {
         id: 'proj-3',
-        title: 'Jobson',
+        title: 'Gerador Aleatorio de Animais',
         type: 'project',
         leftType: 'project',
         rightType: 'Project',
-        url: 'https://github.com/seu-usuario/projeto',
+        url: 'https://github.com/SiSt12/Animal-Generator',
+        content: '<p>Aplicação interativa geradora de fotos de animais on demand.</p><p class="mt-2">Desenvolvida para praticar consumo de APIs externas.</p><p class="mt-2"><a href="https://github.com/SiSt12/Animal-Generator" target="_blank" class="text-blue-400 hover:underline">Ver código no GitHub -></a></p>',
       },
     ],
   },
