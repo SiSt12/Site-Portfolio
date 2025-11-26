@@ -8,11 +8,11 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/habit',
-        destination: 'https://habit-tracker-clone-c2tg.vercel.app/',
+        destination: 'https://habit-tracker-clone-upzi.vercel.app/',
       },
       {
         source: '/habit/:path*',
-        destination: 'https://habit-tracker-clone-c2tg.vercel.app/:path*',
+        destination: 'https://habit-tracker-clone-upzi.vercel.app/:path*',
       },
     ];
   },
