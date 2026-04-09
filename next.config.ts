@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
-  async rewrites() {
+  rewrites: async () => {
     return [
       {
         source: '/habit',
@@ -13,11 +13,11 @@ const nextConfig: NextConfig = {
         destination: 'https://habit-tracker-clone-upzi.vercel.app/habit/:path*',
       },
       {
-        source: '/surfhub',
+        source: '/surfbreath',
         destination: 'https://intensive-breath-work.vercel.app',
       },
       {
-        source: '/surfhub/:path*',
+        source: '/surfbreath/:path*',
         destination: 'https://intensive-breath-work.vercel.app/:path*',
       }
     ];
