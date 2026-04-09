@@ -70,6 +70,15 @@ export const portfolioData: PortfolioSection[] = [
         url: 'https://github.com/SiSt12/Animal-Generator',
         content: '<p>Aplicação interativa geradora de fotos de animais on demand.</p><p class="mt-2">Desenvolvida para praticar consumo de APIs externas.</p><p class="mt-2"><a href="https://github.com/SiSt12/Animal-Generator" target="_blank" class="text-blue-400 hover:underline">Ver código no GitHub -></a></p>',
       },
+      {
+        id: 'proj-4',
+        title: 'SurfHub',
+        type: 'project',
+        rightType: 'Project',
+        leftType: 'project',
+        url: 'https://github.com/SiSt12/Intensive-breath-work',
+        content: '<p>App de treinamento de mobilidade, breathwork e rotina de surfe.</p><p class="mt-2"><a href="https://github.com/SiSt12/Intensive-breath-work" target="_blank" class="text-blue-400 hover:underline">Ver código no GitHub -></a></p><p class="mt-2"><a href="https://silvaldo.com/surfhub" target="_blank" class="text-blue-400 hover:underline">Visitar projeto -></a></p>',
+      },
     ],
   },
   {
