@@ -14,11 +14,11 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/surfhub',
-        destination: 'intensive-breath-work.vercel.app',
+        destination: 'intensive-breath-work.vercel.app/surfhub',
       },
       {
         source: '/surfhub/:path*',
-        destination: 'intensive-breath-work.vercel.app/:path*',
+        destination: 'intensive-breath-work.vercel.app/surfhub/:path*',
       }
     ];
   },
