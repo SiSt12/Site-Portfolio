@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/habit',
-        destination: 'https://habit-tracker-clone-upzi.vercel.app',
+        destination: 'https://habit-tracker-clone-upzi.vercel.app/index.html',
       },
       {
         source: '/habit/:path*',
