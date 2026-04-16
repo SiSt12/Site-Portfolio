@@ -13,6 +13,10 @@ const nextConfig: NextConfig = {
         destination: 'https://habit-tracker-clone-upzi.vercel.app/:path*',
       },
       {
+        source: '/_expo/:path*',
+        destination: 'https://habit-tracker-clone-upzi.vercel.app/_expo/:path*',
+      },
+      {
         source: '/surfhub',
         destination: 'https://intensive-breath-work.vercel.app',
       },
